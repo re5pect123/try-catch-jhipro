@@ -27,9 +27,9 @@ spring:
             enabled: false
     datasource:
         type: com.zaxxer.hikari.HikariDataSource
-        url: jdbc:postgresql://localhost:5432/VezbaJhipsterKnjiga
-        username: VezbaJhipsterKnjiga
-        password:
+        url: jdbc:postgresql://localhost:5432/vezba
+        username: postgres
+        password: postgres
     jpa:
         database-platform: io.github.jhipster.domain.util.FixedPostgreSQL82Dialect
         database: POSTGRESQL
