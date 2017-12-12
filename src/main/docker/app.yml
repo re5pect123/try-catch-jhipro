@@ -1,0 +1,19 @@
+version: '2'
+services:
+    vezbajhipsterknjiga-app:
+        image: vezbajhipsterknjiga
+        environment:
+            - SPRING_PROFILES_ACTIVE=prod,swagger
+            - SPRING_DATASOURCE_URL=jdbc:postgresql://vezbajhipsterknjiga-postgresql:5432/VezbaJhipsterKnjiga
+            - JHIPSTER_SLEEP=10 # gives time for the database to boot before the application
+            - SPRING_DATA_ELASTICSEARCH_CLUSTER_NODES=vezbajhipsterknjiga-elasticsearch:9300
+        ports:
+            - 8080:8080
+    vezbajhipsterknjiga-postgresql:
+        extends:
+            file: postgresql.yml
+            service: vezbajhipsterknjiga-postgresql
+    vezbajhipsterknjiga-elasticsearch:
+        extends:
+            file: elasticsearch.yml
+            service: vezbajhipsterknjiga-elasticsearch
