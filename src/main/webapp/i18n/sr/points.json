@@ -1,0 +1,23 @@
+{
+    "vezbaJhipsterKnjigaApp": {
+        "points" : {
+            "home": {
+                "title": "Points",
+                "createLabel": "Kreiraj novi Points",
+                "createOrEditLabel": "Kreirajte ili izmenite Points",
+                "search": "Potražite Points"
+            },
+            "created": "Kreiran je novi Points pod nazivom {{ param }}",
+            "updated": "Points pod nazivom {{ param }} je ažuriran",
+            "deleted": "Points pod nazivom {{ param }} je obrisan",
+            "delete": {
+                "question": "Da li ste sigurni da želite da obrišete Points pod nazivom {{ id }}?"
+            },
+            "detail": {
+                "title": "Points"
+            },
+            "name": "Name",
+            "surname": "Surname"
+        }
+    }
+}
